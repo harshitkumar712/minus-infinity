@@ -1,2 +1,2 @@
 # minus-infinity
-team members: Ayush dixit , Harshit
+Team members: Ayush dixit , Harshit
