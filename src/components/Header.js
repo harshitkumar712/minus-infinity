@@ -4,7 +4,9 @@ const Header = ({ user, setUser }) => {
   return (
     <div>
       <h1>Welcome {user}</h1>
-      <button onClick={() => setUser("")}>Log out</button>
+      <button className="ui button" onClick={() => setUser("")}>
+        Log out
+      </button>
     </div>
   );
 };
