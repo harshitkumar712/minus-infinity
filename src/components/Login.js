@@ -11,12 +11,14 @@ const Login = ({ setUser }) => {
   return (
     <div>
       <h1>Login Page</h1>
-      <form onSubmit={handleSubmit}>
+      <form className="ui form" onSubmit={handleSubmit}>
         <input
           onChange={(e) => setUsername(e.target.value)}
           placeholder="Enter username"
         />
-        <button type="submit">Login</button>
+        <button className="ui button" type="submit">
+          Login
+        </button>
       </form>
     </div>
   );

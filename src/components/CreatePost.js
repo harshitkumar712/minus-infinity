@@ -16,7 +16,7 @@ const CreatePost = ({ user, handleAddPost }) => {
   return (
     <div>
       <h1>Spread Smile</h1>
-      <form onSubmit={handleSubmit}>
+      <form className="ui form " onSubmit={handleSubmit}>
         <input
           onChange={(e) => setPost(e.target.value)}
           type="text"
@@ -26,9 +26,12 @@ const CreatePost = ({ user, handleAddPost }) => {
         <input
           type="file"
           ref={refImage}
+          className="ui "
           onChange={(e) => setImage(e.target.files[0])}
         />
-        <button type="submit">Submit</button>
+        <button className="ui button " type="submit">
+          Submit
+        </button>
       </form>
     </div>
   );
